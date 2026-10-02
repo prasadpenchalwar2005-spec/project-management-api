@@ -8,6 +8,7 @@ const connectDB = require("./src/config/db");
 const authRoutes = require("./src/routes/auth.routes");
 const projectRoutes = require("./src/routes/project.routes");
 const taskRoutes = require("./src/routes/task.routes");
+const dashboardRoutes = require("./src/routes/dashboard.routes");
 const errorHandler = require("./src/middleware/error.middleware");
 
 const app = express();
@@ -21,6 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 app.get("/", (req, res) => {
   res.status(200).json({
