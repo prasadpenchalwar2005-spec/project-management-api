@@ -6,7 +6,7 @@ A secure REST API backend for a Project and Task Management System built with No
 
 - User registration and login
 - JWT-based authentication
-- Password hashing with bcryptjs
+- Password hashing with bcrypt
 - Project CRUD APIs
 - Task CRUD APIs
 - Task pagination, sorting, and filtering
@@ -16,6 +16,8 @@ A secure REST API backend for a Project and Task Management System built with No
 - MongoDB indexing
 - MVC architecture
 - Postman API collection
+- Dashboard statistics API
+- Jest unit tests
 
 ## Tech Stack
 
@@ -24,9 +26,10 @@ A secure REST API backend for a Project and Task Management System built with No
 - MongoDB
 - Mongoose
 - JWT
-- bcryptjs
+- bcrypt
 - Joi
 - CORS
+- Jest
 
 ## Project Structure
 
@@ -320,3 +323,4 @@ The JWT token is automatically stored after a successful login.
 - Environment-based secrets
 - `.env` excluded from Git
 - Centralized error handling
+- Password hashing with bcrypt
